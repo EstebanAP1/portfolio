@@ -1,0 +1,41 @@
+---
+import { Image } from 'astro:assets'
+import me from '../images/me.webp'
+import GitHub from '../icons/GitHub.astro'
+import LinkedIn from '../icons/LinkedIn.astro'
+---
+
+<header class='flex flex-col gap-5 items-center justify-center'>
+  <Image
+    src={me}
+    alt='Esteban'
+    width={100}
+    height={100}
+    quality={100}
+    class='size-32 aspect-square rounded-full object-contain'
+  />
+  <div class='flex w-full flex-col gap-1 items-center justify-center'>
+    <h1 class='text-xl font-bold'>Esteban Padilla</h1>
+    <p class='text-sm text-gray-300'>
+      Web Developer | TypeScript | JavaScript | React | Next.js | NestJS
+    </p>
+    <div class='w-full flex items-center justify-center gap-2'>
+      <a
+        href='https://github.com/EstebanAP1'
+        target='_blank'
+        rel='noopener noreferrer'
+        class='hover:scale-105 outline-none focus:outline-none transition'
+        aria-label="Esteban's GitHub">
+        <GitHub class='size-6' />
+      </a>
+      <a
+        href='https://www.linkedin.com/in/esteban-padilla-webdev/'
+        target='_blank'
+        rel='noopener noreferrer'
+        class='hover:scale-105 outline-none focus:outline-none transition'
+        aria-label="Esteban's LinkedIn">
+        <LinkedIn class='size-8' />
+      </a>
+    </div>
+  </div>
+</header>

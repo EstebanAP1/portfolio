@@ -1,0 +1,27 @@
+---
+import Card from './Card.astro'
+
+const PROJECTS = [
+  {
+    title: 'NearSpace',
+    body: 'Simulación interactiva de un orrery utilizando Three.js y React-three, que modela el movimiento de los cuerpos celestes del sistema solar.',
+    repo: 'https://github.com/EstebanAP1/near-space',
+    page: 'https://near-space.vercel.app/',
+  },
+  {
+    title: 'SkipQ',
+    body: 'Aplicación de gestión de colas para negocios, desarrollada con Next.js, TypeScript y NestJS',
+    page: 'https://skipq.vercel.app/?site=presentation-test',
+  },
+]
+---
+
+<ul class='flex flex-col gap-5 max-w-2xl'>
+  {
+    PROJECTS.map(({ title, body, page, repo }) => (
+      <li>
+        <Card title={title} body={body} page={page} repo={repo} />
+      </li>
+    ))
+  }
+</ul>
