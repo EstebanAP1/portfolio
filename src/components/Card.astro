@@ -20,13 +20,13 @@ const { title, body, repo, page } = Astro.props
   <p class='text-sm text-gray-200'>
     {body}
   </p>
-  <div class='flex gap-2 mt-2'>
+  <div class='flex gap-3 mt-2'>
     <a
       href={page}
       class='hover:scale-105 outline-none focus:outline-none transition'
       target='_blank'
       aria-label={`${title} page`}>
-      <Link class='size-5' />
+      <Link class='size-7' />
     </a>
     {
       repo && (
@@ -35,7 +35,7 @@ const { title, body, repo, page } = Astro.props
           class='hover:scale-105 outline-none focus:outline-none transition'
           target='_blank'
           aria-label={`${title} GitHub`}>
-          <GitHub class='size-5' />
+          <GitHub class='size-7' />
         </a>
       )
     }
