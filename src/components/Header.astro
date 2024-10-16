@@ -1,20 +1,16 @@
 ---
-import { Image } from 'astro:assets'
-import me from '../images/me.webp'
 import GitHub from '../icons/GitHub.astro'
 import LinkedIn from '../icons/LinkedIn.astro'
 ---
 
 <header class='flex flex-col gap-5 items-center justify-center'>
-  <Image
-    src={me}
+  <img
+    src='/me.webp'
     alt='Esteban'
-    width={100}
-    height={100}
-    quality={100}
     class='size-32 aspect-square rounded-full object-contain'
   />
-  <div class='flex w-full flex-col gap-1 items-center justify-center'>
+  <div
+    class='flex w-full flex-col gap-1 items-center justify-center text-center'>
     <h1 class='text-xl font-bold'>Esteban Padilla</h1>
     <p class='text-sm text-gray-300'>
       Web Developer | TypeScript | JavaScript | React | Next.js | NestJS

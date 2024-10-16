@@ -13,11 +13,11 @@ const { title, body, repo, page } = Astro.props
 ---
 
 <section
-  class='flex flex-col border rounded-lg border-primary/60 bg-primary/20 p-4'>
-  <h2 class='text-lg font-medium'>
+  class='flex flex-col border rounded-lg gap-1 border-primary/60 bg-primary/20 p-4'>
+  <h2 class='font-medium'>
     {title}
   </h2>
-  <p>
+  <p class='text-sm text-gray-200'>
     {body}
   </p>
   <div class='flex gap-2 mt-2'>
